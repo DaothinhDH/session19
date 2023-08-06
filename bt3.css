@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* bai2 */
+.container {
+    width: auto;
+    height: 200px;
+    position: relative;
+}
+
+.box2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 64, 60, 0.5);
+}
+
+.box2_content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: white;
+}
+
+/* bai3 */
+.change {
+    width: 100vw;
+    height: 25vh;
+    background-color: rgb(140, 255, 127);
+    display: flex;
+    gap: 20px;
+   padding: 20px;
+}
+
+.boxA {
+    border: 2px solid;
+    width: 10vw;
+    height: 20vh;
+    background-color:red;
+}
+
+.boxB {
+    border: 2px solid;
+    width: 10vw;
+    height: 20vh;
+    background-color: pink;
+}
+
+.boxC {
+    border: 2px solid;
+    width: 10vw;
+    height: 20vh;
+    background-color: yellow;
+}
