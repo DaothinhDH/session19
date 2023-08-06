@@ -20,7 +20,7 @@ listImg.forEach((imgElement,index )=> {
 });
 
 
-nextbtn.addEventListener('click', e => {
+prevbtn.addEventListener('click', e => {
     if (currentIndex == 0) {
         currentIndex=listImg.length-1
     } else {
@@ -29,7 +29,7 @@ nextbtn.addEventListener('click', e => {
     updateImageByIndex(currentIndex)
 })
 
-prevbtn.addEventListener('click', e => {
+nextbtn.addEventListener('click', e => {
     if (currentIndex ==  listImg.length -1) {
         currentIndex = 0
     } else {
@@ -37,3 +37,12 @@ prevbtn.addEventListener('click', e => {
     }
     updateImageByIndex(currentIndex)
 })
+
+setInterval(() => {
+    if (currentIndex == listImg.length - 1) {
+        currentIndex = 0
+    } else {
+        currentIndex++
+    }
+    updateImageByIndex(currentIndex)
+},1000)
